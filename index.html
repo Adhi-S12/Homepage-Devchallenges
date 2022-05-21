@@ -7,6 +7,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Homepage | Devchallenges</title>
   </head>
@@ -16,15 +17,18 @@
       <header>
         <h2 class="logo">Edie</h2>
         <nav class="right-nav">
-          <span class="material-icons hide">
+          <span class="material-icons menu-icons">
             menu
           </span>
+          <span class="material-icons menu-icons hidden" >
+            close
+            </span>
           <ul class="navigation hidden">
-            <li>Home</li>
-            <li>Services</li>
-            <li>Our Works</li>
-            <li>Clients</li>
-            <li>Contact</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Our Works</a></li>
+            <li><a href="#">Clients</a></li>
+            <li><a href="#">Contact</a></li>
           </ul>
         </nav>
       </header>
@@ -34,72 +38,72 @@
         <p class="tagline side-wrapper">Unhappy with your website?</p>
         <h1 class="hero-main_heading side-wrapper">We create beautiful and fast web services</h1>
         <img src="./img/heroImage.jpg" alt="hero image" class="hero">
-        <h2 class="hero-secondary_heading">Story, emotion and purpose</h2>
+        <h2 class="hero-secondary_heading side-wrapper">Story, emotion and purpose</h2>
         <p class="hero-main_description side-wrapper">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
         <p class="hero-secondary_description side-wrapper">Want us to contact you?</p>
-        <div class="ctc">
+        <div class="ctc side-wrapper">
           <p class="ctc-email">Email</p>
           <p class="ctc-join_btn">Join</p>
         </div>
 
         <!-- Services Page -->
         <article class="service-page">
-          <h1 class="service-heading">We offer high demand services  </h1>
-          <div class="services-list">
+          <h1 class="service-heading side-wrapper">We offer high demand services  </h1>
+          <div class="services-list side-wrapper">
             <!-- service 1 -->
             <div class="service">
-              <span class="material-icons">
+              <span class="material-icons service-icon">
                 edit
                 </span>
-                <h3 class="service-name">UI/UX Design</h3>
+                <h3 class="service-name ">UI/UX Design</h3>
                 <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                <p class="getstarted-btn">Get Started</p>
+                <p class="getstarted-btn hover_btn">Get Started</p>
               </div>
             <!-- service 2 -->
             <div class="service">
-              <span class="material-icons">
+              <span class="material-icons service-icon service-icon2">
                 code
                 </span>
                 <h3 class="service-name">Front End</h3>
                 <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                <p class="getstarted-btn">Get Started</p>
+                <p class="getstarted-btn hover_btn">Get Started</p>
               </div>
             <!-- service 3 -->
             <div class="service">
-              <span class="material-icons">
-                edit
+              <span class="material-icons service-icon service-icon3">
+                storage
                 </span>
                 <h3 class="service-name">Back End</h3>
                 <p class="service-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</p>
-                <p class="getstarted-btn">Get Started</p>
+                <p class="getstarted-btn hover_btn">Get Started</p>
               </div>
           </div>
         </article>
         <!-- portfolio page -->
         <article class="portfolio-page">
-          <h1 class="portfolio-heading">Good design means good business</h1>
+          <h1 class="portfolio-heading side-wrapper">Good design means good business</h1>
           <div class="portfolio-list">
             <!-- portfolio 1 -->
-            <div class="portfolio">
+            <div class="portfolio portfolio-1">
               <div class="portfolio-img-container"><img src="./img/smarthome.jpg" alt="smarthome" class="portfolio-img"></div>
               <p class="portfolio-type">Full stack application</p>
               <h3 class="portfolio-name">Smart home dashboard</h3>
             </div>
             <!-- portfolio 2 -->
-            <div class="portfolio">
+            <div class="portfolio portfolio-2">
               <div class="portfolio-img-container"><img src="./img/onboard.png" alt="onboard" class="portfolio-img"></div>
               <p class="portfolio-type">UX/UI design</p>
               <h3 class="portfolio-name">Onboard application</h3>
             </div>
             <!-- portfolio 3 -->
-            <div class="portfolio">
-              <div class="portfolio-img-container"><img src="./img/smarthome.jpg" alt="smarthome" class="portfolio-img"></div>
+            <div class="portfolio portfolio-3">
+              <div class="portfolio-img-container"><img src="./img/booking.png" alt="booking system" class="portfolio-img"></div>
               <p class="portfolio-type">Mobile application</p>
               <h3 class="portfolio-name">Booking system</h3>
             </div>
             <!-- portfolio 4 -->
-            <div class="portfolio">
-              <div class="portfolio-img-container"><img src="./smarthome.jpg" alt="smarthome" class="portfolio-img"></div>
+            <div class="portfolio portfolio-4">
+              <div class="portfolio-img-container"><img src="./img/juice-product.png" alt="juice product" class="portfolio-img"></div>
               <p class="portfolio-type">Front End application</p>
               <h3 class="portfolio-name">Juice product homepage</h3>
             </div>
@@ -114,9 +118,11 @@
             <p class="team-page-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div class="team-gallery">
-            <div class="team-img-container"><img src="./img/person1.png" alt="member one" class="team-member-img"></div>
-            <div class="team-img-container"><img src="./img/person2.png" alt="member two" class="team-member-img"></div>
-            <div class="team-img-container"><img src="./img/person3.png" alt="member three" class="team-member-img"></div>
+            <div class="team-img-container"><img src="./img/person3.png" alt="member three" class="team-member-img team-member-img-3"></div>
+            <div class="wrap-img">
+              <div class="team-img-container"><img src="./img/person1.png" alt="member one" class="team-member-img team-member-img-1"></div>
+            <div class="team-img-container"><img src="./img/person2.png" alt="member two" class="team-member-img team-member-img-2"></div>
+            </div>
           </div>
         </article>
         <!-- Testimonial page -->
@@ -131,6 +137,8 @@
           </div>
         </article>
       </main>
+    </div>
+
       <!-- Footer -->
       <footer>
         <div class="footer-wrapper">
@@ -180,14 +188,18 @@
             </div>
           </div>
           <!-- contact us -->
-          <p class="hero-secondary_description side-wrapper">Want us to contact you?</p>
-          <div class="ctc">
+          <p class="hero-secondary_description footer-contact ">Want us to contact you?</p>
+          <div class="ctc footer-ctc">
             <p class="ctc-email">Email</p>
             <p class="ctc-join_btn">Join</p>
           </div>
         </div>
-        <p class="credit-link">created by adhi - devChallenges.io</p>
+        <p class="credit-link">created by <span style="font-size: 14px;
+          font-weight: 700;
+          line-height: 17px;
+          letter-spacing: 0em;
+          text-align: center; color:var(--white)">adhi</span> - devChallenges.io</p>
       </footer>
-    </div>
+    <script src="./script.js"></script>
   </body>
 </html>
