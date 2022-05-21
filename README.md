@@ -6,7 +6,7 @@
 
 <div align="center">
   <h3>
-    <a href="https://app.netlify.com/sites/homepage-adhi/settings/general">
+    <a href="https://homepage-adhi.netlify.app/">
       Demo
     </a>
     <span> | </span>
