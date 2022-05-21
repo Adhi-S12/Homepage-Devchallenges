@@ -156,6 +156,9 @@ body {
   margin: 12px auto 24px auto;
 }
 
+main {
+  /* width: 95%; */
+}
 /* Navigation */
 
 .logo {
@@ -174,6 +177,7 @@ body {
   border-radius: 18px;
   margin-top: 15px;
   margin-bottom: 22px;
+  margin-right: 15px;
 }
 
 .menu-icons {
@@ -191,8 +195,8 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background: var(--darkBlue);
   z-index: 2;
   overflow: hidden;
@@ -579,7 +583,7 @@ footer {
   margin-top: 100px;
   background-color: var(--darkBlue);
   width: 100vw;
-  padding: 36px 40px 24px 40px;
+  padding: 36px 40px 24px 0px;
 }
 
 .footer-navlink {
@@ -629,8 +633,287 @@ svg {
   line-height: 17px;
   letter-spacing: 0em;
   color: var(--gray4);
-  position: relative;
-  left: 5%;
+  text-align: center;
+}
+
+/* ---- Desktop Styles ----- */
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    max-width: 90%;
+  }
+
+  /* Navbar - Desktop */
+  .logo {
+    font-family: Heebo;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 53px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 52px;
+    position: relative;
+    bottom: 25px;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navigation {
+    position: static;
+    width: 100%;
+    height: 100%;
+    background: var(--white);
+    /* color: var(--gray1); */
+    z-index: 0;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+  }
+
+  .navigation li a {
+    color: var(--gray1);
+  }
+
+  .tagline {
+    margin-top: 96px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .hero-main_heading {
+    margin-top: 16px;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 45%;
+  }
+
+  .hero {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: 354px;
+    border-radius: 18px;
+  }
+
+  .hero-secondary_heading {
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 30%;
+  }
+  .hero-main_description {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 30%;
+    margin-top: 42px;
+  }
+
+  .hero-secondary_description {
+    margin-top: 42px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .ctc {
+    margin-top: 10px;
+    width: 30%;
+  }
+
+  .side-wrapper-desk {
+    margin-left: 125px;
+    margin-right: 125px;
+  }
+
+  /* service page - Desktop */
+  .service-page {
+    margin-top: 200px;
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .services-list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 42px;
+    width: auto;
+    height: fit-content;
+    overflow: auto;
+  }
+
+  .service {
+    padding: 40px 20px;
+    width: 33%;
+    margin-right: 10px;
+    margin-bottom: 0;
+  }
+
+  .portfolio-page {
+    margin-top: 200px;
+  }
+
+  .portfolio-heading {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 40%;
+  }
+
+  .portfolio-list {
+    margin-top: 150px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 40px;
+  }
+
+  .portfolio-2,
+  .portfolio-4 {
+    position: relative;
+    bottom: 100px;
+  }
+
+  .portfolio-type {
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .portfolio-name {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  /* Team page */
+  .team-page-meet {
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .team-page-heading {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 50%;
+    margin-top: 7px;
+    margin-bottom: 14px;
+  }
+
+  .team-page-desc {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+
+  .team-page {
+    display: flex;
+    align-items: center;
+  }
+  .team-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    right: 50px;
+  }
+
+  .team-img-container {
+    text-align: right;
+  }
+
+  .team-member-img-3 {
+    width: 70%;
+  }
+  .team-member-img-1,
+  .team-member-img-2 {
+    width: 120%;
+  }
+
+  /* testimonial page */
+  .testimonial-heading {
+    font-family: Poppins;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  .testimonial-user {
+    margin-top: 36px;
+    margin-bottom: 130px;
+    width: 70%;
+  }
+
+  /* footer */
+  .footer-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .footer-navlinks {
+    width: 20%;
+  }
+  .footer-social {
+    width: 30%;
+  }
+  .contact-us {
+    width: 30%;
+  }
+  .hero-secondary_description {
+    margin-top: 0;
+  }
+  .footer-ctc {
+    width: 100%;
+  }
+  .footer-social {
+    margin-top: 0;
+  }
 }
 
 /* misc */

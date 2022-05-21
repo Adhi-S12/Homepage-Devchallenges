@@ -17,41 +17,41 @@
       <header>
         <h2 class="logo">Edie</h2>
         <nav class="right-nav">
-          <span class="material-icons menu-icons">
+          <span class="material-icons menu-icons hidden menu-icon">
             menu
           </span>
-          <span class="material-icons menu-icons hidden" >
+          <span class="material-icons menu-icons hidden close-icon" >
             close
             </span>
           <ul class="navigation hidden">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Our Works</a></li>
-            <li><a href="#">Clients</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home" onClick="linkClick(event)">Home</a></li>
+            <li><a href="#services" onClick="linkClick(event)">Services</a></li>
+            <li><a href="#ourworks" onClick="linkClick(event)">Our Works</a></li>
+            <li><a href="#clients" onClick="linkClick(event)">Clients</a></li>
+            <li><a href="#contact" onClick="linkClick(event)">Contact</a></li>
           </ul>
         </nav>
       </header>
       <!-- Main -->
-      <main >
+      <main id="home" >
         <!-- Hero Page -->
-        <p class="tagline side-wrapper">Unhappy with your website?</p>
-        <h1 class="hero-main_heading side-wrapper">We create beautiful and fast web services</h1>
+        <p class="tagline side-wrapper side-wrapper-desk">Unhappy with your website?</p>
+        <h1 class="hero-main_heading side-wrapper side-wrapper-desk">We create beautiful and fast web services</h1>
         <img src="./img/heroImage.jpg" alt="hero image" class="hero">
-        <h2 class="hero-secondary_heading side-wrapper">Story, emotion and purpose</h2>
-        <p class="hero-main_description side-wrapper">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
-        <p class="hero-secondary_description side-wrapper">Want us to contact you?</p>
-        <div class="ctc side-wrapper">
+        <h2 class="hero-secondary_heading side-wrapper side-wrapper-desk">Story, emotion and purpose</h2>
+        <p class="hero-main_description side-wrapper side-wrapper-desk">We help transform your ideas into real world applications that will outperform your toughest competition and help you achieve your strategic goals in short period of time.</p>
+        <p class="hero-secondary_description side-wrapper side-wrapper-desk">Want us to contact you?</p>
+        <div class="ctc side-wrapper side-wrapper-desk">
           <p class="ctc-email">Email</p>
           <p class="ctc-join_btn">Join</p>
         </div>
 
         <!-- Services Page -->
-        <article class="service-page">
-          <h1 class="service-heading side-wrapper">We offer high demand services  </h1>
-          <div class="services-list side-wrapper">
+        <article class="service-page" id="services">
+          <h1 class="service-heading side-wrapper side-wrapper-desk">We offer high demand services  </h1>
+          <div class="services-list side-wrapper side-wrapper-desk">
             <!-- service 1 -->
-            <div class="service">
+            <div class="service" >
               <span class="material-icons service-icon">
                 edit
                 </span>
@@ -80,8 +80,8 @@
           </div>
         </article>
         <!-- portfolio page -->
-        <article class="portfolio-page">
-          <h1 class="portfolio-heading side-wrapper">Good design means good business</h1>
+        <article class="portfolio-page side-wrapper side-wrapper-desk" id="ourworks">
+          <h1 class="portfolio-heading ">Good design means good business</h1>
           <div class="portfolio-list">
             <!-- portfolio 1 -->
             <div class="portfolio portfolio-1">
@@ -111,7 +111,7 @@
           <p class="see-more">see more &#8594 </p>
         </article>
         <!-- Team page -->
-        <article class="team-page">
+        <article class="team-page side-wrapper side-wrapper-desk" >
           <div class="team-page-info">
             <p class="team-page-meet">Meet the team</p>
             <h2 class="team-page-heading">We are chilled and a laidback team</h2>
@@ -126,7 +126,7 @@
           </div>
         </article>
         <!-- Testimonial page -->
-        <article class="testimonial-page">
+        <article class="testimonial-page side-wrapper-desk" id="clients">
           <h1 class="testimonial-heading">“Fast and outstanding resutls. Edie understands their customer’s needs. They have a young and talented team.”</h1>
           <div class="testimonial-user">
             <div class="testimonial-user-imgcontainer"><img src="./img/person4.png" alt="testimonial user" class="testimonial-user-img"></div>
@@ -141,7 +141,7 @@
 
       <!-- Footer -->
       <footer>
-        <div class="footer-wrapper">
+        <div class="footer-wrapper side-wrapper side-wrapper-desk">
           <ul class="footer-navlinks">
             <li class="footer-navlink">Home</li>
             <li class="footer-navlink">Services</li>
@@ -188,12 +188,14 @@
             </div>
           </div>
           <!-- contact us -->
-          <p class="hero-secondary_description footer-contact ">Want us to contact you?</p>
+          <div class="contact-us" id="contact">
+            <p class="hero-secondary_description footer-contact ">Want us to contact you?</p>
           <div class="ctc footer-ctc">
             <p class="ctc-email">Email</p>
             <p class="ctc-join_btn">Join</p>
           </div>
         </div>
+          </div>
         <p class="credit-link">created by <span style="font-size: 14px;
           font-weight: 700;
           line-height: 17px;
@@ -201,5 +203,6 @@
           text-align: center; color:var(--white)">adhi</span> - devChallenges.io</p>
       </footer>
     <script src="./script.js"></script>
+    
   </body>
 </html>

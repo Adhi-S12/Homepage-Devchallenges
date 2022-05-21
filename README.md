@@ -6,11 +6,11 @@
 
 <div align="center">
   <h3>
-    <a href="https://{your-demo-link.your-domain}">
+    <a href="https://app.netlify.com/sites/homepage-adhi/settings/general">
       Demo
     </a>
     <span> | </span>
-    <a href="https://{your-url-to-the-solution}">
+    <a href="https://github.com/AdhipathiPandiyan-S/Homepage-Devchallenges">
       Solution
     </a>
     <span> | </span>
@@ -27,7 +27,8 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot1](./img/screenshot1.jpg)
+![screenshot2](./img/screenshot2.jpg)
 
 ### Built With
 
